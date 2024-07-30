@@ -1,2 +1,4 @@
 Examples/sqlite/data/*
+!Examples/sqlite/data/empty.txt
 Examples/sqlite/upload/*
+!Examples/sqlite/upload/empty.txt
