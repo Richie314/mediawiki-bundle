@@ -9,3 +9,11 @@ Examples/mariadb/data/*
 Examples/mariadb/upload/*
 !Examples/mariadb/upload/empty.txt
 Examples/mariadb/LocalSettings.php
+
+Examples/postgres/postgres-data/*
+!Examples/postgres/postgres-data/empty.txt
+Examples/postgres/pgadmin-data/*
+!Examples/postgres/pgadmin-data/empty.txt
+Examples/postgres/upload/*
+!Examples/postgres/upload/empty.txt
+Examples/postgres/LocalSettings.php

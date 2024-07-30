@@ -4,7 +4,7 @@ services:
     restart: always
     volumes:
       - ./assets:/var/www/html/resources/assets:ro
-      - ./upload:/var/www/html/upload:rw
+      - ./upload:/var/www/html/images:rw
       # Comment the following line by addind a '#' at its start, uncomment by removing the '#'
       # - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
     ports:

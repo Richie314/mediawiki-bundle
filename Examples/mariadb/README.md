@@ -1,5 +1,5 @@
-# SQLite demo DB
-This is a demo configuration based upon a sqlite db. It also spawns a sqlitebrowser instance on port 3000
+# MariaDB demo DB
+This is a demo configuration based upon a sqlite db. It also spawns a phpmyadmin instance on port 8080
 
 ## Run the sample
 Move in the current folder
@@ -24,6 +24,9 @@ Restart the container
 ```bash
 docker-compose down && docker-compose up -d
 ```
+### Credentials
+Mariadb's user is ```root``` and its password ```password```.
 
+This is a demo and those credentials can't be used in a real scenario.
 ## Sample logos
 The logos provided by default are taken from [SvgRepo](https://svgrepo.com)
