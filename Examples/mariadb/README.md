@@ -4,7 +4,7 @@ This is a demo configuration based upon a sqlite db. It also spawns a sqlitebrow
 ## Run the sample
 Move in the current folder
 ```bash
-cd Examples/sqlite
+cd Examples/mariadb
 ```
 
 Start the container via 

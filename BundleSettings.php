@@ -31,17 +31,6 @@ $wgMaxUploadSize = 1024*1024*100;
 
 //
 //
-//   Themes loading
-//
-//
-
-wfLoadSkin( 'MinervaNeue' );
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Timeless' );
-wfLoadSkin( 'Vector' );
-
-//
-//
 //   Extension loading and configuration
 //
 //
@@ -126,6 +115,3 @@ wfLoadExtensions( [
 ] );
 $wgPopupsHideOptInOnPreferencesPage = true;
 $wgPopupsReferencePreviewsBetaFeature = false;
-
-
-$wgDeprecationReleaseLimit = '1.0';

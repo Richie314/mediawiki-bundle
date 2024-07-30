@@ -6,7 +6,8 @@ services:
       - ./assets:/var/www/html/resources/assets:ro
       - ./data:/var/www/data
       - ./upload:/var/www/html/upload:rw
-      - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
+      # Comment the following line by addind a '#' at its start, uncomment by removing the '#'
+      # - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
     ports:
       - 80:80
   sqlite-browser:

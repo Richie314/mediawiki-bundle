@@ -2,3 +2,10 @@ Examples/sqlite/data/*
 !Examples/sqlite/data/empty.txt
 Examples/sqlite/upload/*
 !Examples/sqlite/upload/empty.txt
+Examples/sqlite/LocalSettings.php
+
+Examples/mariadb/data/*
+!Examples/mariadb/data/empty.txt
+Examples/mariadb/upload/*
+!Examples/mariadb/upload/empty.txt
+Examples/mariadb/LocalSettings.php
