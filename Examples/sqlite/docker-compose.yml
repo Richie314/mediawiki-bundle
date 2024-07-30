@@ -1,0 +1,19 @@
+services:
+  mediawiki-bundle:
+    image: mediawiki-bundle:latest
+    restart: always
+    volumes:
+      - ./assets:/var/www/html/resources/assets:ro
+      - ./data:/var/www/data
+      - ./upload:/var/www/html/upload:rw
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php:ro
+    ports:
+      - 80:80
+  sqlite-browser:
+    image: linuxserver/sqlitebrowser:latest
+    restart: unless-stopped
+    volumes:
+      - ./data:/config
+    ports:
+      - 3000:3000
+      - 3001:3001
