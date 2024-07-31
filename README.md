@@ -1,7 +1,7 @@
 # Mediawiki Preconfigured
 This is a Docker image based upon [mediawiki:latest](https://hub.docker.com/_/mediawiki/)
 
-It is bundled with various extensions that come preconfigured
+It is bundled with various extensions that come preconfigured. Because of all the modules that are loaded the bundle is nothing but small
 
 ## Configuration
 After starting the image, follow the instructions and download the ```LocalSettings.php``` volume.
