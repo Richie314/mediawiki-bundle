@@ -3,9 +3,9 @@ name: Docker image
 on:
   push: 
     branches: ['main']
+
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
     docker:
@@ -19,6 +19,12 @@ jobs:
             id-token: write
 
         steps:
+          - name: Converting repo name to lowercase
+            id: repo
+            uses: ASzc/change-string-case-action@v1
+            with:
+                string: ${{ github.repository }}
+
           - name: Checkout repository
             uses: actions/checkout@v4
             
@@ -33,7 +39,7 @@ jobs:
             id: meta
             uses: docker/metadata-action@v5
             with:
-                images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+                images: ${{ env.REGISTRY }}/${{ steps.repo.outputs.lowercase }}
 
           - name: Build and push Docker image
             id: push
@@ -41,5 +47,5 @@ jobs:
             with:
                 context: .
                 push: true
-                tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+                tags: ${{ steps.meta.outputs.tags }}, ${{ env.REGISTRY }}/${{ steps.repo.outputs.lowercase }}:latest
                 labels: ${{ steps.meta.outputs.labels }}
