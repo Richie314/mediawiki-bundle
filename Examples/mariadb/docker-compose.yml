@@ -1,6 +1,6 @@
 services:
   mediawiki-bundle:
-    image: mediawiki-bundle:latest
+    image: ghcr.io/richie314/mediawiki-bundle
     restart: always
     volumes:
       - ./assets:/var/www/html/resources/assets:ro

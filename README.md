@@ -3,6 +3,12 @@ This is a Docker image based upon [mediawiki:latest](https://hub.docker.com/_/me
 
 It is bundled with various extensions that come preconfigured. Because of all the modules that are loaded the bundle is nothing but small
 
+## Pull the image
+
+```bash
+docker pull ghcr.io/richie314/mediawiki-bundle:latest
+```
+
 ## Configuration
 After starting the image, follow the instructions and download the ```LocalSettings.php``` volume.
 At the end of the file add this line to include the bundled modules and configure them
