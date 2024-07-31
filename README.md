@@ -1,4 +1,6 @@
 # Mediawiki Preconfigured
+![Build status](./actions/workflows/docker/build.yml/badge.svg)
+
 This is a Docker image based upon [mediawiki:latest](https://hub.docker.com/_/mediawiki/)
 
 It is bundled with various extensions that come preconfigured. Because of all the modules that are loaded the bundle is nothing but small
