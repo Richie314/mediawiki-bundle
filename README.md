@@ -1,5 +1,5 @@
 # Mediawiki Preconfigured
-![Build status](./actions/workflows/docker/build.yml/badge.svg)
+[![Build status](https://github.com/Richie314/mediawiki-bundle/actions/workflows/docker-build.yml/badge.svg)](https://github.com/Richie314/mediawiki-bundle/actions/workflows/docker-build.yml)
 
 This is a Docker image based upon [mediawiki:latest](https://hub.docker.com/_/mediawiki/)
 
